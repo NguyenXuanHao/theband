@@ -1,0 +1,175 @@
+/* PC */
+@media (min-width:1024px){
+    .sub-nav {
+    position: absolute;
+    right: -13%;
+    top: 72%;
+}   
+.content{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:64px 0;
+    
+}
+.menu-icon{
+    display: none;
+}
+}
+/* Table */
+@media (max-width:1024px) and (min-width:768px) {
+    .sub-nav {
+        position: absolute;
+        right: -9%;
+        top: 73%;
+    }
+    .place-buy-ticket {
+        margin-left: 0;
+        margin-right: 0; 
+    }
+    .content{
+        width: 800px;
+        max-width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 64px 8px;
+    }
+    .inpu {
+        padding: 12px;
+    }
+    .inpu-full {
+        width: 102%;
+        margin-top: 17px;
+        margin-left: -11px;
+    }
+    .header-icon{
+        
+    }
+    .custom-inpu{
+        display: flex;
+        
+    }
+    .custom-ti-menu{
+        display: none;
+    }
+     .inpu{
+        
+        margin-left: -10px;
+ 
+        
+    }
+    .inpu:nth-child(2){
+        margin-left: 2px;
+    } 
+}
+/* MOBLIE */
+@media (max-width:767px) {
+    .header{
+        overflow: hidden;
+    }
+    .header-items {
+        display: block;
+        padding: 12px 24px;
+    }
+    .header-list {
+        display: block;
+        background: black;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .custom-ti-search{
+        display: none   ;
+    }
+    .sub-nav{
+        display: none;
+        right: 56%;
+        top: 76%;
+    }
+    .sub-nav-item{
+        display: block;
+        width: 100%;
+    }
+    
+    /* .header-list{
+        display: none;
+    } */
+    .header-items:first-child{
+        display: block;
+    }
+    .member{
+        display: block;
+        width: 100%;
+    }
+    .member-img{
+        width: 14rem;
+        height: 14rem;
+
+    }
+    .content{
+        margin-bottom: 55px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .the-band,  
+    .tour{
+        padding-top: 25px;
+    }
+    .card{
+        width:100%;
+    }
+    .card-img{
+        width: 100%;
+    }
+    .place-buy-ticket {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .modal-container {
+        width: 24.25em;
+        min-height: 22rem;
+    }
+    .modal-heading {
+        width: 24.25em;
+    }
+    .contact-contact{
+        width: 100%;
+        /* margin: 0; */
+    }
+    .inpu{
+        width: 100%;
+        
+    }
+    .inpu:first-child{
+        margin-bottom: 12px;
+        margin-top: 12px;
+
+    }
+    .custom-inpu{
+        margin-left: 20px;        
+        margin-right: 20px;        
+    }
+    .col-full{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .custom-btn{
+        width: 100%;
+        /* margin-right: 20px;
+        margin-left: 20px; */
+        
+    }
+    .block-btn{
+        margin-left: 20px;
+        margin-right: 20px;        
+    }
+    .sub-nav {
+        background-color: grey;
+        margin-top: 11px;
+        position: initial;
+        /* display: none; */
+    }
+    
+    
+}

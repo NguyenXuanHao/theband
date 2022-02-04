@@ -1,0 +1,397 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header{
+        height: 47px;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        z-index: 999999999;
+        
+    }
+    .header-list{
+        display: inline-block;
+        
+    }
+    .header-link{
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        font-size: 21px;
+        line-height: 24px;
+    }
+    .header-items{
+        display:inline-block;
+        padding: 12px 24px;
+        position: relative;
+    }
+    .header-items:hover,
+    .header-items:hover .header-link,
+    .sub-nav-item:hover
+    {
+        background-color: white;
+        color: black;
+    }
+    .header-icon{
+        display: inline-block;
+    }
+    .custom-ti-menu,
+    .custom-ti-search{
+        color :white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 23px;
+        font-size: 23px;
+        padding: 12px 24px;
+        font-weight: 600;
+    }
+    .custom-ti-menu:hover,
+    .custom-ti-search:hover{
+        background-color: red;
+        color: black;
+    }
+    .custom-ti-download{
+        color: white;
+        line-height: 47px;
+    }
+    .header-items:hover .custom-ti-download{
+        color: black;
+    }
+    
+    .sub-nav-link{
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .sub-nav-item{
+        list-style: none;
+        padding: 12px 24px;
+        border: 0.5px solid black;
+    }
+    .sub-nav{
+        background-color: grey;
+        margin-top: 11px;
+        position: absolute;
+        right: -13%;
+         top: 72%;
+        display: none;
+    }
+    .daddy{
+        position: relative;
+    }
+    .header-items:hover .sub-nav{
+        display: block;
+
+    }
+    .slider{
+        display: inline-block;
+        padding-top:50%;
+        width: 100%;
+        margin-top: 47px;
+        background: url(ny.jpg) top center no-repeat  ;
+        background-size: cover;
+
+    }  
+    .slider-container{
+        padding-bottom:50px ;
+        text-align: center;
+        line-height: 45px;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .the-band{
+        text-align: center;
+    }
+    .the-band-title,.tour-date-title,.the-band-title{
+        font-size: 32px;
+        margin: 10px 0 ;
+        /* text-align: center; */
+
+    }
+
+    .the-band-about,.tour-date-about,.contact-about{
+        font-style: italic;
+        color: grey;
+        margin:15px 0 ;
+    }
+    .the-band-decr{
+        line-height: 27px;
+        margin:15px 0 ;
+        text-align: justify;
+    }
+    .member{
+        width: calc(100% /3);
+        float: left;
+        padding-top: 32px 0;
+    }
+    .member-name{
+        margin-top: 47px;
+    }
+    .member-img{
+        border-radius: 10%;
+        width: 146px;
+        height: 146px;
+
+    }
+    .member-band::after{
+        content:"" ;
+        clear: both;
+        display: table;
+    }
+    .tour{
+        background-color: black;
+        color: white;
+    }
+    .tour-date{
+        text-align: center;
+    }
+    .ticket{
+        background-color: white;
+        color: black;
+
+    }
+    .month{
+        list-style: none;
+        border: 1px solid grey;
+        text-align: left;
+        padding: 8px 16px;
+        color: grey ;
+    }
+    .sold-out{
+        background-color: red;
+        color: white;
+        margin-left: 16px;
+        padding:0 8px;
+    }
+    .must-3{
+        background-color: black;
+        color: white;
+        float: right;
+        border-radius: 50%;
+        width: 20px;
+        text-align: center;
+    }
+    .card{
+        margin-top:42px ;
+        width: calc(100%/3);
+        float: left;
+        padding: 0 8px;
+        /* margin-left:-8px ;
+        margin-right:-8px ; */
+    }
+    .card-img{
+        width: 100%;
+        height: 184px;
+        display: block;
+    }
+    .card-container{
+        background-color: white;
+        color: black;
+        padding: 0 16px;
+        line-height: 2;
+    }
+    .place-buy-ticket{
+        margin-left: -8px;
+        margin-right:-8px ;
+    }
+    .place-buy-ticket::after{
+        content: "";
+        clear: both;
+        display: table;
+        padding: 32px 8px;
+    }
+    .card-decr{
+        line-height: 30px;
+    }
+    .card-btn{
+        padding: 8px 16px;
+        margin-bottom: 12px;
+        background: black;
+        color: white;
+        font-size: 18px;
+        border: none;
+    }
+    .time{
+        color: grey;
+    }
+    .contact-title{
+        text-align: center;
+        font-size: 32px;
+    }
+    .contact-about{
+        text-align: center;
+        margin: 32px 0 46px;
+        
+    }
+    .contact-contact{
+        width: 50%;
+        float: left;
+    }
+    .col{
+        width: 50%;
+    }
+    .contact-link{
+        font-size: 21px;
+    }
+    .col-half{
+        width: 50%;
+    }
+    .inpu{
+        padding: 16px;
+        border: 2px solid black;
+    }
+    .col{
+        display: inline-block;
+    }
+    .contact::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .footer-icon,.footer-text{
+        text-align: center;
+    }
+    .footer-icon{
+        letter-spacing: 4px;
+    }
+    .footer-ter{
+        padding:64px 16px;
+        line-height: 31px;
+    }
+    .footer-img{
+        width: 100%;
+    }
+    .inpu-full{
+        width: 100%;
+        margin-top: 12px;
+    }
+    .custom-inpu::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    form{
+        padding-left: 31px;
+    }
+    .custom-btn {
+        padding: 8px 16px;
+        background-color: black;
+        color: white;
+        float: right;
+        margin: 12px 0 ;
+    }
+    .card-img:hover{
+        opacity: 0.6;
+    }
+    .card-btn:hover,.custom-btn:hover{
+        color:black;
+        background-color: grey;
+        cursor: pointer;
+    }
+    .custom-icon{
+        padding-left: 20px;
+    }
+    .location{
+        display: inline-block;
+        margin-left: 21px;
+    }
+    .modal{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.4);
+        
+    }
+    .modal-container{
+        width: 900px;
+        min-height: 200px;
+        background-color: white;
+        line-height: 33px;
+        animation: opening 2s ease;
+        
+    }
+    .modal-heading{
+        width: 900px;
+        background-color: #009688;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 32px 16px;
+        color: white;
+    }
+    .custom-btn-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 30px;
+        padding: 12px;
+    }
+    .modal-heading-title{
+        margin: 12px;
+    }
+    .derc{
+        display: inline-block;
+    }
+    .modal-input{
+        width: 100%;
+        padding: 8px;
+    }
+    .modal-body{
+        padding: 0 18px;
+    }
+    form{
+        padding-left: 0;
+    }
+    .modal-submit{
+        width: 100%;
+        padding:16px;
+        text-align: center;
+        color: white;
+        background-color: #009688;
+        margin: 16px 0;
+        border: none;
+    }
+    .modal-footer-container{
+        float: right;
+    }
+    .help{
+        color: blue;
+    }
+    .modal-footer{
+        padding: 0 18px;
+    }
+    .footer-close{
+        background-color: red;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        margin-bottom: 12px;
+    }
+    .custom-btn-close:hover,.modal-submit:hover,.footer-close:hover{
+        background-color: #ccc;
+        color: black;
+    }
+    .open{
+        display: flex;
+    }
+
+
+
+    @keyframes opening{
+        0%{
+            transform: translateY(-180px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }

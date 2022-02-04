@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toastUI.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+</head>
+<body>
+    <div id="toast">
+    </div>
+    <div class="js-btn-success btn btn-success">Show success toast</div>
+    <div class="js-btn-error btn btn-error">Show error toast</div>
+    <script>
+        
+        var toast =document.querySelector("#toast")
+        function toastMain({title="",massage="",type="",delay=3000}) {
+            if(toast){
+                var createToast = document.createElement("div")
+                var icons = {
+                    success:"fas fa-check-circle",
+                    error:"fas fa-exclamation-circle"
+                }
+                var icon = icons[type]
+                durasion = (delay / 1000).toFixed(2) 
+                createToast.classList.add("toast")
+                createToast.style.animation =`opening ease 1s,close linear 1s ${durasion}s forwards`
+                createToast.innerHTML = `
+                <div class="toast-items ">
+                    <div class="icon-begin toast--${type}">
+                        <i class="${icon}"></i>
+                    </div>
+                        <div class="toast-container">
+                            <h3 class="toast-title">${title}</h3>
+                            <p class="toast-decr">${massage}</p>
+                        </div>
+                    <div class="js-icon-exit icon-exit">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                `
+                toast.appendChild(createToast)
+
+
+                setTimeout(function() {
+                    toast.removeChild(createToast)
+                },delay + 1000)
+            }
+        }
+        document.querySelector(".js-btn-success").addEventListener("click",function(){
+            toastMain({
+                title:"Success",
+                massage:"Themify Icons is a complete set of icons for use in web design and apps",
+                type:"success",
+                delay:1000
+            })
+        })
+        
+        document.querySelector(".js-btn-error").addEventListener("click",function(){
+            toastMain({
+                title:"Error",
+                massage:"Themify Icons is a complete set of icons for use in web design and apps",
+                type:"error",
+                delay:3000
+            })
+        })
+        toast.addEventListener("click",function(e) {
+            if(e.target.closest(".js-icon-exit")){
+                console.log("12px")
+            }
+
+        })
+    </script>
+</body>
+</html>
